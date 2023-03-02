@@ -1897,9 +1897,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.284:
-  version "1.4.315"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.315.tgz#b60a6676b3a1db332cfc8919118344aa06b9ac99"
-  integrity sha512-ndBQYz3Eyy3rASjjQ9poMJGoAlsZ/aZnq6GBsGL4w/4sWIAwiUHVSsMuADbxa8WJw7pZ0oxLpGbtoDt4vRTdCg==
+  version "1.4.316"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.316.tgz#7f2cfda199ae1a32a69b3eb9046b8b0640086064"
+  integrity sha512-9urqVpdeJYAwVL/sBjsX2pSlgYI/b4nOqC6UaNa0xlq1VUbXLRhERWlxcQ4FWfUOQQxSSxN/taFtapEcwg5tVA==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -2133,9 +2133,9 @@ find-up@^5.0.0:
     path-exists "^4.0.0"
 
 flow-parser@0.*:
-  version "0.200.1"
-  resolved "https://registry.yarnpkg.com/flow-parser/-/flow-parser-0.200.1.tgz#99a94b35b7d1815716e3db56bb797440ed340716"
-  integrity sha512-N6gxgo0iQx0G2m3aJjg3RLxNLUG3EBYgBN/xDDPGQXSjvqNkTdEd2t1myE36Xi7GndZQWngDP7jf0GvxdL6pRg==
+  version "0.201.0"
+  resolved "https://registry.yarnpkg.com/flow-parser/-/flow-parser-0.201.0.tgz#d2005d4dae6fddf60d30f9ae0fb49a13c9c51cfe"
+  integrity sha512-G4oeDNpNGyIrweF9EnoHatncAihMT0tQgV6NMdyM5I7fhrz9Pr13PJ2KLQ673O4wj9KooTdBpeeYHdDNAQoyyw==
 
 flow-parser@^0.121.0:
   version "0.121.0"
@@ -3639,9 +3639,10 @@ react-native-gradle-plugin@^0.70.3:
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.70.3.tgz#cbcf0619cbfbddaa9128701aa2d7b4145f9c4fc8"
   integrity sha512-oOanj84fJEXUg9FoEAQomA8ISG+DVIrTZ3qF7m69VQUJyOGYyDZmPqKcjvRku4KXlEH6hWO9i4ACLzNBh8gC0A==
 
-"react-native-iar-sdk@github:ImagineAR/react-native-iar-sdk#develop":
-  version "0.1.0"
-  resolved "https://codeload.github.com/ImagineAR/react-native-iar-sdk/tar.gz/b0d3dbb5e295fd3d35e65a892eb58801d4af196e"
+react-native-iar-sdk@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-iar-sdk/-/react-native-iar-sdk-1.0.0.tgz#ff7385debdb810d0f6fc9083bc168ca1f46f8c99"
+  integrity sha512-htOw6pCG8CHjsppCcv3jCna3tzD+T7KYgQflTMKLih/cOHxfBZAFr4rmMkYVh2NKBIIsH7dGp50Tbg8AV7chmA==
 
 react-native-reanimated@^2.14.4:
   version "2.14.4"
