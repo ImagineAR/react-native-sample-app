@@ -3641,7 +3641,7 @@ react-native-gradle-plugin@^0.70.3:
 
 "react-native-iar-sdk@github:ImagineAR/react-native-iar-sdk#develop":
   version "0.1.0"
-  resolved "https://codeload.github.com/ImagineAR/react-native-iar-sdk/tar.gz/9a36ceaf332d4ce1327dee8cbb81ae2532fe99f4"
+  resolved "https://codeload.github.com/ImagineAR/react-native-iar-sdk/tar.gz/b0d3dbb5e295fd3d35e65a892eb58801d4af196e"
 
 react-native-reanimated@^2.14.4:
   version "2.14.4"
