@@ -17,6 +17,7 @@ Android API Level `26`
 ### Installation of the sample app
 
 Clone the sample app from this github repository
+
 `git clone https://github.com/ImagineAR/react-native-sample-app.git`
 
 Install the application for iOS and android with the following steps:
@@ -35,6 +36,7 @@ cd ios && pod install --repo-update
 ### Usage
 
 `yarn run ios` Build the iOS App (requires a MacOS computer) to a simulator or physical device.
+
 `yarn run android` Build the Android App to a simulator or physical device.
 
 ## The Samples
