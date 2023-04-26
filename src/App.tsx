@@ -7,6 +7,7 @@ import HomeScreen from './screens/HomeScreen';
 import OnDemandMarkersScreen from './screens/OnDemandMarkersScreen';
 import { initialize, iarLicense } from 'react-native-iar-sdk';
 import SurfaceViewScreen from './screens/SurfaceViewScreen';
+import TargetViewScreen from './screens/TargetViewScreen';
 import RewardsScreen from './screens/RewardsScreen';
 import LocationMarkerScreen from './screens/LocationMarkersScreen';
 
@@ -80,6 +81,13 @@ export default function App() {
         <Stack.Screen
           name="SurfaceViewScreen"
           component={SurfaceViewScreen}
+          options={{
+            title: 'AR View',
+          }}
+        />
+        <Stack.Screen
+          name="targetViewScreen"
+          component={TargetViewScreen}
           options={{
             title: 'AR View',
           }}

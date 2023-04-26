@@ -13,6 +13,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons/faUser';
 import { faCloudArrowDown } from '@fortawesome/free-solid-svg-icons/faCloudArrowDown';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons/faLocationDot';
+import { faUsersViewfinder } from '@fortawesome/free-solid-svg-icons/faUsersViewfinder';
 import { faStar } from '@fortawesome/free-solid-svg-icons/faStar';
 import { getExternalUserId } from 'react-native-iar-sdk';
 
@@ -44,6 +45,10 @@ const HomeScreen = () => {
 
   const onOnDemandMarkersPress = () => {
     navigation.navigate('onDemandMarkers');
+  };
+
+  const onTargetViewPress = () => {
+    navigation.navigate('targetViewScreen');
   };
 
   const onLocationMarkerPress = () => {
@@ -95,6 +100,25 @@ const HomeScreen = () => {
                 style={styles.navItemIcon}
               />
               <Text style={styles.navItemText}>On Demand Markers</Text>
+            </TouchableOpacity>
+          </View>
+          <View
+            style={[
+              styles.navItem,
+              userId === '' ? styles.navItemDisabled : null,
+            ]}
+          >
+            <TouchableOpacity
+              onPress={onTargetViewPress}
+              style={styles.navItemButton}
+              disabled={userId === ''}
+            >
+              <FontAwesomeIcon
+                size={24}
+                icon={faUsersViewfinder}
+                style={styles.navItemIcon}
+              />
+              <Text style={styles.navItemText}>Target Markers</Text>
             </TouchableOpacity>
           </View>
           <View
