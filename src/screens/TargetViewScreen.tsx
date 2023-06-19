@@ -1,6 +1,6 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, View } from 'react-native';
-import { IARPlaceButtonConfig, TargetView } from 'react-native-iar-sdk';
+import {SafeAreaView, StyleSheet, View} from 'react-native';
+import {IARPlaceButtonConfig, TargetView} from 'react-native-iar-sdk';
 
 const TargetViewScreen = () => {
   const onRewardAwarded = () => {
@@ -9,6 +9,10 @@ const TargetViewScreen = () => {
 
   const onTrackingChanged = (isTracking: boolean) => {
     console.log('TargetViewScreen - onTrackingChanged: ', isTracking);
+  };
+
+  const onTargetScanned = (targetId: string) => {
+    console.log('TargetViewScreen - onTargetScanned: ', targetId);
   };
 
   const placeButtonConfig: IARPlaceButtonConfig = {
@@ -27,7 +31,8 @@ const TargetViewScreen = () => {
         <TargetView
           style={styles.targetView}
           rewardAwarded={() => onRewardAwarded()}
-          trackingChanged={(isTracking) => onTrackingChanged(isTracking)}
+          trackingChanged={isTracking => onTrackingChanged(isTracking)}
+          targetScanned={targetId => onTargetScanned(targetId)}
           placeButtonConfig={placeButtonConfig}
         />
       </View>
