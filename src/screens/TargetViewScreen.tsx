@@ -1,6 +1,6 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, View} from 'react-native';
-import {IARPlaceButtonConfig, TargetView} from 'react-native-iar-sdk';
+import { Linking, SafeAreaView, StyleSheet, View } from 'react-native';
+import { IARPlaceButtonConfig, TargetView } from 'react-native-iar-sdk';
 
 const TargetViewScreen = () => {
   const onRewardAwarded = () => {
@@ -15,13 +15,22 @@ const TargetViewScreen = () => {
     console.log('TargetViewScreen - onTargetScanned: ', targetId);
   };
 
+  const onRewardButtonPressed = async (actionButtonUri: string) => {
+    console.log('TargetViewScreen - onRewardButtonPressed: ', actionButtonUri);
+    try {
+      await Linking.openURL(actionButtonUri);
+    } catch (e) {
+      console.error("Couldn't load page", e);
+    }
+  };
+
   const placeButtonConfig: IARPlaceButtonConfig = {
     borderWidth: 2,
     borderRadius: 5,
-    textColor: '#FFFFFF',
-    backgroundColor: '#333333',
+    textColor: '#ffd800',
+    backgroundColor: '#ff00e8',
     borderColor: '#FFFFFF',
-    width: 100,
+    width: 200,
     height: 50,
   };
 
@@ -31,9 +40,11 @@ const TargetViewScreen = () => {
         <TargetView
           style={styles.targetView}
           rewardAwarded={() => onRewardAwarded()}
-          trackingChanged={isTracking => onTrackingChanged(isTracking)}
-          targetScanned={targetId => onTargetScanned(targetId)}
+          rewardButtonPressed={onRewardButtonPressed}
+          trackingChanged={(isTracking) => onTrackingChanged(isTracking)}
+          targetScanned={(targetId) => onTargetScanned(targetId)}
           placeButtonConfig={placeButtonConfig}
+          rewardButtonConfig={placeButtonConfig}
         />
       </View>
     </SafeAreaView>

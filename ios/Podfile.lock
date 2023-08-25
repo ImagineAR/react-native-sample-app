@@ -257,7 +257,7 @@ PODS:
     - glog
   - react-native-get-random-values (1.8.0):
     - React-Core
-  - react-native-iar-sdk (1.1.0-beta-4):
+  - react-native-iar-sdk (1.1.0-beta-5):
     - ImagineAR-Core (~> 1.6.14)
     - ImagineAR-Surface (~> 1.6.14)
     - ImagineAR-Target (~> 1.6.14)
@@ -540,7 +540,7 @@ SPEC CHECKSUMS:
   React-jsinspector: 5e5497c844f2381e8648ec3a7d0ad25b3f27f23e
   React-logger: b277ad8f4473f2506fb30b762b6348534a3de10e
   react-native-get-random-values: a6ea6a8a65dc93e96e24a11105b1a9c8cfe1d72a
-  react-native-iar-sdk: 7716ac955bad5d996213364fe6cf5f18e17f6ade
+  react-native-iar-sdk: 5e4513640254b8fede324378fc0e83181981eaf3
   react-native-safe-area-context: 1d596539b05a78f2b346e954e7c577f6f9be7544
   React-perflogger: e9249a18e055cae96fdf685bf6145cbea62506c8
   React-RCTActionSheet: a6d2a544a4605a111ce80fa9319cc870ca3ea778
