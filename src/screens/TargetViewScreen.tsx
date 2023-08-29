@@ -26,8 +26,20 @@ const TargetViewScreen = () => {
 
   const placeButtonConfig: IARPlaceButtonConfig = {
     borderWidth: 2,
-    borderRadius: 5,
-    textColor: '#ffd800',
+    borderRadius: 50,
+    textColor: '#ffffff',
+    backgroundColor: '#313131',
+    borderColor: '#e04a42',
+    width: 200,
+    height: 50,
+  };
+
+  const rewardButtonConfig: IARPlaceButtonConfig = {
+    top: 100,
+    left: 0,
+    borderWidth: 2,
+    borderRadius: 50,
+    textColor: '#0004ff',
     backgroundColor: '#ff00e8',
     borderColor: '#FFFFFF',
     width: 200,
@@ -44,7 +56,7 @@ const TargetViewScreen = () => {
           trackingChanged={(isTracking) => onTrackingChanged(isTracking)}
           targetScanned={(targetId) => onTargetScanned(targetId)}
           placeButtonConfig={placeButtonConfig}
-          rewardButtonConfig={placeButtonConfig}
+          rewardButtonConfig={rewardButtonConfig}
         />
       </View>
     </SafeAreaView>
