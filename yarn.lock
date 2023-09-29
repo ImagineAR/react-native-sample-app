@@ -3625,10 +3625,10 @@ react-native-gradle-plugin@^0.70.3:
   resolved "https://registry.npmjs.org/react-native-gradle-plugin/-/react-native-gradle-plugin-0.70.3.tgz"
   integrity sha512-oOanj84fJEXUg9FoEAQomA8ISG+DVIrTZ3qF7m69VQUJyOGYyDZmPqKcjvRku4KXlEH6hWO9i4ACLzNBh8gC0A==
 
-react-native-iar-sdk@1.1.0-beta-7:
-  version "1.1.0-beta-7"
-  resolved "https://registry.yarnpkg.com/react-native-iar-sdk/-/react-native-iar-sdk-1.1.0-beta-7.tgz#a3c3d61c8bd09b9648eaf122147d0d82cb24ea5b"
-  integrity sha512-63UzjJ3fGUbEv8c7+8sXmJmtymztzK6KWW33liThMuHrRggExjaKNsQYEvifk1+hqwdF56sIsLbF8c+22tNjTA==
+react-native-iar-sdk@1.1.0-beta-8:
+  version "1.1.0-beta-8"
+  resolved "https://registry.yarnpkg.com/react-native-iar-sdk/-/react-native-iar-sdk-1.1.0-beta-8.tgz#f21d470aa8f1948c94a99798b2b7c151d3434624"
+  integrity sha512-51RsdtWRLQnwcVexuUn+Pk1gR2dKBQOiDnLkW8RzptLGKjsO4DL1uH5uZxWNMba3/QtsEKtdt+28Nl/Ilfvevw==
 
 react-native-reanimated@^2.14.4:
   version "2.17.0"
