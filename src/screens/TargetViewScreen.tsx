@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Linking, SafeAreaView, StyleSheet, View } from 'react-native';
 import { IARPlaceButtonConfig, TargetView } from 'react-native-iar-sdk';
 
 const TargetViewScreen = () => {
+  const [closeOnRewardButtonPress, _setCloseOnRewardButtonPress] = useState(true);
   const onRewardAwarded = () => {
     console.log('TargetViewScreen - onRewardAwarded');
   };
@@ -57,6 +58,7 @@ const TargetViewScreen = () => {
           targetScanned={(targetId) => onTargetScanned(targetId)}
           placeButtonConfig={placeButtonConfig}
           rewardButtonConfig={rewardButtonConfig}
+          closeOnRewardButtonPress={closeOnRewardButtonPress}
         />
       </View>
     </SafeAreaView>
